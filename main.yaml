@@ -1,0 +1,16 @@
+---
+- name: Зміна паролю юзера cssuport на SV
+  hosts: MasterCard-test
+  gather_facts: no 
+  collections:
+    - community.windows
+  tasks:
+  - name: shell
+    shell: whoami
+  - debug:
+      msg: msg
+  - name: shell
+    shell: whoami
+  - name: Get the LAPS password using Kerberos auth, relies on kinit already being called
+    set_fact:
+      ansible_password: "{{ lookup('community.windows.laps_password', 'SERVER', domain='dc01.ansible.com') }}"
