@@ -2,7 +2,6 @@
 - name: Зміна паролю юзера cssuport на SV
   hosts: MasterCard-test
   gather_facts: no
-  collections_paths: /var/lib/awx/projects/_13__test/collection/
   collections:
     - windows
   tasks:
