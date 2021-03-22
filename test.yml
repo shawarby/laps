@@ -3,7 +3,8 @@
   hosts: all
   gather_facts: no 
   collections:
-    - name: https://github.com/ansible-collections/community.windows.git
+    - name: community.windows
+      source: https://github.com/ansible-collections/
       type: git
   tasks:
   - name: shell
