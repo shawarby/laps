@@ -4,8 +4,8 @@
   gather_facts: no
   collections:
     - community.windows
-  vars:
-    collections_paths: /var/lib/awx/projects/collection
+#  vars:
+#    collections_paths: /var/lib/awx/projects/collection
   tasks:
   - name: shell
     shell: whoami
