@@ -3,7 +3,7 @@
   hosts: all
   gather_facts: no
   collections:
-    - windows
+    - community.windows
 #  vars:
 #    collections_paths: /var/lib/awx/projects/collections/ansible_collections
   tasks:
@@ -15,4 +15,4 @@
     shell: whoami
   - name: Get the LAPS password using Kerberos auth, relies on kinit already being called
     set_fact:
-      ansible_password: "{{ lookup('windows.laps_password', 'SERVER', domain='dc01.ansible.com') }}"
+      ansible_password: "{{ lookup('community.windows.laps_password', 'SERVER', domain='dc01.ansible.com') }}"
