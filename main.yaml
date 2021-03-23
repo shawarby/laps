@@ -5,7 +5,7 @@
   collections:
     - community.windows
   vars:
-    collections_paths: /var/lib/awx/projects/collections
+    collections_paths: /var/lib/awx/projects/collections/ansible_collections
   tasks:
   - name: shell
     shell: whoami
