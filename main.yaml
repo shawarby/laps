@@ -2,8 +2,8 @@
 - name: Зміна паролю юзера cssuport на SV
   hosts: all
   gather_facts: no
-  collections:
-    - community.windows
+#  collections:
+#    - community.windows
 #  vars:
 #    collections_paths: /var/lib/awx/projects/collection
   tasks:
