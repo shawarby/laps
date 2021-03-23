@@ -13,6 +13,16 @@
       msg: msg
   - name: shell
     shell: whoami
-  - name: Get the LAPS password using Kerberos auth, relies on kinit already being called
-    set_fact:
-      ansible_password: "{{ lookup('community.windows.laps_password', 'SERVER', domain='dc01.ansible.com') }}"
+    
+  - name: Use Simple auth over LDAPS
+  set_fact:
+    ansible_password: "{{ lookup('community.windows.laps_password', 'server',
+                                 domain='dc01.ansible.com',
+                                 auth='simple',
+                                 scheme='ldaps',
+                                 username='username@ANSIBLE.COM',
+                                 password='SuperSecret123') }}"
+
+#  - name: Get the LAPS password using Kerberos auth, relies on kinit already being called
+#    set_fact:
+#      ansible_password: "{{ lookup('community.windows.laps_password', 'SERVER', domain='dc01.ansible.com') }}"
