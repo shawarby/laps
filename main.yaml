@@ -5,7 +5,7 @@
 #  connection: paramiko
 #  collections:
 #    - community.windows
-  environment:
+  vars:
     ansible_pipelining: true
 #    collections_paths: /var/lib/awx/projects/collection
   tasks:
