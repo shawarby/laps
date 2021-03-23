@@ -5,7 +5,9 @@
 #  connection: paramiko
 #  collections:
 #    - community.windows
-#  vars:
+  vars:
+    pipelining: True
+    ANSIBLE_SSH_PIPELINING: 1
 #    collections_paths: /var/lib/awx/projects/collection
   tasks:
   - name: shell
