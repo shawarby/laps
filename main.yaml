@@ -5,8 +5,8 @@
 #  connection: paramiko
 #  collections:
 #    - community.windows
-  vars:
-    pipelining: false
+  environment:
+    pipelining: true
 #    collections_paths: /var/lib/awx/projects/collection
   tasks:
   - name: shell
