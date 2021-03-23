@@ -1,5 +1,5 @@
 ---
-- name: Зміна паролю юзера cssuport на SV
+- name: laps
   hosts: all
   gather_facts: no
 #  connection: paramiko
