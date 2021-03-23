@@ -6,7 +6,7 @@
 #  collections:
 #    - community.windows
   environment:
-    pipelining: true
+    ansible_pipelining: true
 #    collections_paths: /var/lib/awx/projects/collection
   tasks:
   - name: shell
