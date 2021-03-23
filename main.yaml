@@ -6,8 +6,7 @@
 #  collections:
 #    - community.windows
   vars:
-    pipelining: True
-    ANSIBLE_SSH_PIPELINING: 1
+    pipelining: false
 #    collections_paths: /var/lib/awx/projects/collection
   tasks:
   - name: shell
