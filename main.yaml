@@ -3,7 +3,7 @@
   hosts: all
   gather_facts: no
   collections:
-    - community.windows
+    - windows
 #  vars:
 #    collections_paths: /var/lib/awx/projects/collections/ansible_collections
   tasks:
