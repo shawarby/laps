@@ -3,7 +3,7 @@
   hosts: all
   gather_facts: no
   environment:
-    ANSIBLE_CONFIG: /var/lib/awx/projects/_13__test/
+    ANSIBLE_CONFIG = /var/lib/awx/projects/_13__test/
 #  connection: paramiko
 #  collections:
 #    - community.windows
