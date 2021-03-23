@@ -15,8 +15,8 @@
     shell: whoami
     
   - name: Use Simple auth over LDAPS
-  set_fact:
-    ansible_password: "{{ lookup('laps_password', 'server',
+    set_fact:
+      ansible_password: "{{ lookup('laps_password', 'server',
                                  domain='dc01.ansible.com',
                                  auth='simple',
                                  scheme='ldaps',
