@@ -2,7 +2,8 @@
 - name: laps
   hosts: all
   gather_facts: no
-  connection: paramiko
+  transport: paramiko
+#  connection: paramiko
 #  collections:
 #    - community.windows
 #  vars:
