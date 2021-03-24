@@ -24,7 +24,7 @@
                                  auth='simple',
                                  scheme='ldaps',
                                  username='username@ANSIBLE.COM',
-                                 password='SuperSecret123') }}"
+                                 password=SuperSecret123) }}"
 
 #  - name: Get the LAPS password using Kerberos auth, relies on kinit already being called
 #    set_fact:
