@@ -2,12 +2,12 @@
 - name: laps
   hosts: all
   gather_facts: no
-#  connection: paramiko
+  connection: paramiko
 #  collections:
 #    - community.windows
-  vars:
-    ansible_pipelining: true
-    ansible_ssh_pipelining: 1
+#  vars:
+#    ansible_pipelining: true
+#    ansible_ssh_pipelining: 1
 #    collections_paths: /var/lib/awx/projects/collection
   tasks:
   - name: shell
