@@ -2,13 +2,9 @@
 - name: laps
   hosts: all
   gather_facts: no
-#  connection: paramiko
-#  collections:
-#    - community.windows
   vars:
     ansible_pipelining: true
-    ansible_ssh_pipelining: 1
-#    collections_paths: /var/lib/awx/projects/collection
+
   tasks:
   - name: shell
     shell: whoami
@@ -24,7 +20,7 @@
                                  auth='simple',
                                  scheme='ldaps',
                                  username='username@ANSIBLE.COM',
-                                 password=SuperSecret123) }}"
+                                 password=pass) }}"
 
 #  - name: Get the LAPS password using Kerberos auth, relies on kinit already being called
 #    set_fact:
